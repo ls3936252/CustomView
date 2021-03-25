@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.solo.customview.BasisView
+        android:id="@+id/bs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        tools:ignore="MissingConstraints" />
+
+<!--    <com.cusc.customview.AnimWaveView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+<!--    <com.cusc.customview.PSView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+<!--    <com.cusc.customview.PorterDuffXfermodeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+<!--    <com.cusc.customview.AnimationSurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+<!--    <com.cusc.customview.MyLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:text="aaaaa"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:text="bbbbb"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:text="ccccc"/>
+    </com.cusc.customview.MyLayout>-->
+    <com.solo.customview.View3D
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
