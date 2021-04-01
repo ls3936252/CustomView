@@ -9,6 +9,7 @@ import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
@@ -22,7 +23,7 @@ public class View3D extends ImageView {
     private Bitmap mBitmap;
     private Camera camera = new Camera();
     private Matrix matrix = new Matrix();
-    private int mProgress = 80;
+    private int mProgress = 0;
 
     private static final String TAG = "View3D";
 
@@ -43,7 +44,7 @@ public class View3D extends ImageView {
 
 
     private void init() {
-        mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.solo);
+        mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.aaa);
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
     }
@@ -56,13 +57,14 @@ public class View3D extends ImageView {
     @Override
     protected void onDraw(Canvas canvas) {
 //        canvas.drawBitmap(mBitmap, new Rect(0,0,1920,1080),new Rect(0,0,getWidth(),getHeight()),mPaint);
-//        Log.d(TAG, "onDraw: mProgress" + mProgress);
+        Log.d(TAG, "onDraw: mProgress" + mProgress);
         camera.save();
         canvas.save();
 
         mPaint.setAlpha(100);
         canvas.drawBitmap(mBitmap, 0, 0, mPaint);
-        camera.rotateY(mProgress);
+//        camera.rotateY(mProgress);
+        camera.translate(0, 0, -mProgress);
         camera.applyToCanvas(canvas);
         camera.restore();
         super.onDraw(canvas);

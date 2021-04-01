@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.solo.customview.DragLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:text="111111"
+        android:background="@android:color/holo_red_dark"
+        android:layout_height="100dp"
+        android:layout_width="100dp"/>
+
+    <TextView
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:text="222222"
+        android:background="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:text="33333333"
+        android:background="@android:color/holo_purple"/>
+
+
+</com.solo.customview.DragLayout>
