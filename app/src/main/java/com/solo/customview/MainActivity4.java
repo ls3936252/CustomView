@@ -1,5 +1,6 @@
 package com.solo.customview;
 
+import android.graphics.Rect;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +30,7 @@ public class MainActivity4 extends AppCompatActivity {
 
         RvAdapter rvAdapter = new RvAdapter(this, data);
         rv.setAdapter(rvAdapter);
+//        rv.setLayoutManager(new CustomLayoutManager());
         rv.setLayoutManager(new LinearLayoutManager(this));
     }
 }
